@@ -1,0 +1,29 @@
+/*
+ * Math.h
+ *
+ *  Created on: 14 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef MATH_H_
+#define MATH_H_
+
+/*
+ * Header file for the "Math" class
+ *
+ */
+
+// This is a preprocessor directive that tells the compiler to only include
+// this header once, regardless of how many times it has been imported in the
+// program.
+#pragma once
+
+// "Math" class definition
+
+static class Math {
+public:
+	// given base an exponent, calculate value:
+	static int Math::pow(int base, int exp);
+};
+
+#endif /* MATH_H_ */

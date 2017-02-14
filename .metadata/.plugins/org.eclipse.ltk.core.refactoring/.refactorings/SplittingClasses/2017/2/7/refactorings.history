@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SplittingClasses/src/Math.c&apos; to &apos;Math.cpp&apos;" description="Rename resource &apos;Math.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Math.c" name="Math.cpp" stamp="1487105429511" updateReferences="true"/>
+</session>

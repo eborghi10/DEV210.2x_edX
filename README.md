@@ -24,6 +24,10 @@ ___
 
 ## 2-MoreCppClasses
 
+- **SplittingClasses**: implementing a class with separate files (.cpp and .h).
+
+- **ConstructorsAndDestructors**: 
+
 ---
 
 ## 3-MoreOOP

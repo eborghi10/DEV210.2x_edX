@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : ConstructorsAndDestructors.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Person.h"
+
+using namespace std;
+
+int main() {
+
+	/**
+	 * We declare a pointer called pOne that will hold the memory address of a
+	 * Person object that will reside in an area of computer memory known as
+	 * the heap.
+	 *
+	 * We have not created an actual object in memory yet, we have simply asked
+	 * the computer to allocate sufficient memory to store the object.
+	 *
+	 */
+
+    // create a Person instance using default constructor
+    Person *pOne = new Person();
+
+    // Create a Person instance using 2 argument constructor
+    Person *pTwo = new Person("Tom", "Thumb");
+
+    // Create a Person instance using 3 argument constructor
+    Person *pThree = new Person("Tom", "Thumb", 15);
+
+    pOne->SayHello();
+    pTwo->SayHello();
+    pThree->SayHello();
+
+	return 0;
+}

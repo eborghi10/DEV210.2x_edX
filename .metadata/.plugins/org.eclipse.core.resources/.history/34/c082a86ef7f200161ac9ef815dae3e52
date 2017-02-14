@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : SplittingClasses.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Testing splitting classes (Math.cpp, Math.h)
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
