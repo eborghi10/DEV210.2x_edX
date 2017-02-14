@@ -16,6 +16,10 @@ ___
 
 - **MemoryAllocationWithClasses**: dynamic memory allocation of an object of a class.
 
+___
+
+- **PointersLab**: review of all topics in this unit.
+
 ---
 
 ## 2-MoreCppClasses
