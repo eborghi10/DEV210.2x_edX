@@ -1,0 +1,15 @@
+08:45:51 **** Incremental Build of configuration Debug for project PointersLab ****
+make all 
+Building file: ../src/PointersLab.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PointersLab.d" -MT"src/PointersLab.d" -o "src/PointersLab.o" "../src/PointersLab.cpp"
+Finished building: ../src/PointersLab.cpp
+ 
+Building target: PointersLab
+Invoking: Cross G++ Linker
+g++  -o "PointersLab"  ./src/PointersLab.o   
+Finished building target: PointersLab
+ 
+
+08:45:52 Build Finished (took 410ms)
+

@@ -1,0 +1,90 @@
+#include <iostream>
+
+/*
+ * To compile: g++ MemAllocWithClasses.cpp -o execute.sh
+ *
+ * To run: ./execute
+ * (If a "permission denied" error appears, type: $chmod +x execute)
+ *
+ */
+
+using namespace std;
+
+class Person
+{
+    string firstName;
+    string lastName;
+    int age;
+public:
+    // Constructors
+    Person();
+    Person(string fName, string lName);
+    Person(string fName, string lName, int age);
+    // Destructor
+    ~Person();
+
+    void SetFirstName(string fName);
+    string GetFirstName();
+
+    void SetLastName(string lName);
+    string GetLastName();
+
+    void SetAge(int age);
+    int GetAge();
+
+    void SayHello();
+};
+
+int main()
+{
+    /*
+     * Dynamic memory allocation of an object of the class Person.
+     *
+     */
+
+    Person person = new Person();
+
+    return 0;
+}
+
+Person::Person() {}
+
+Person::Person(string fName, string lName) {
+    firstName = fName;
+    lastName = lName;
+}
+
+Person::Person(string fName, string lName, int age) {
+    firstName = fName;
+    lastName = lName;
+    age = age;
+}
+
+Person::~Person() {
+    cout << "Destructor called" << endl;
+}
+
+void SetFirstName(string fName) {
+    this->firstName = fName;
+}
+string GetFirstName() {
+    return this->firstName;
+}
+
+void SetLastName(string lName) {
+    this->lastName = lName;
+}
+string GetLastName() {
+    return this->lastName;
+}
+
+void SetAge(int age) {
+    this->age = age;
+}
+int GetAge() {
+    return this->age;
+}
+
+void SayHello() {
+    cout << "Hello, World!" << endl;
+}

@@ -1,0 +1,15 @@
+07:49:09 **** Incremental Build of configuration Debug for project MemoryAllocationWithClasses ****
+make all 
+Building file: ../src/MemoryAllocationWithClasses.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MemoryAllocationWithClasses.d" -MT"src/MemoryAllocationWithClasses.d" -o "src/MemoryAllocationWithClasses.o" "../src/MemoryAllocationWithClasses.cpp"
+Finished building: ../src/MemoryAllocationWithClasses.cpp
+ 
+Building target: MemoryAllocationWithClasses
+Invoking: Cross G++ Linker
+g++  -o "MemoryAllocationWithClasses"  ./src/MemoryAllocationWithClasses.o   
+Finished building target: MemoryAllocationWithClasses
+ 
+
+07:49:10 Build Finished (took 669ms)
+

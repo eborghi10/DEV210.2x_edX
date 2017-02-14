@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : MemoryAllocationWithClasses.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+#include "include/Person.hpp"
+
+/*
+ * Use Eclipse IDE to compile
+ *
+ */
+
+using namespace std;
+
+int main() {
+    /*
+     * Dynamic memory allocation of an object of the class Person.
+     *
+     */
+
+    Person *person = new Person();
+
+	return 0;
+}
