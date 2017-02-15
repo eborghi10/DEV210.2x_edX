@@ -1,0 +1,18 @@
+/*
+ * Handle.cpp
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Handle.h"
+
+Handle::Handle() {
+
+	body = new Body;  // Create the underlying "body" object.
+}
+
+Handle::~Handle() {
+	// TODO Auto-generated destructor stub
+}
+

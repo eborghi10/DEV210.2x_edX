@@ -1,32 +1,35 @@
-15:06:00 **** Incremental Build of configuration Debug for project Inheritance ****
-make all 
-Building file: ../src/Student.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
-Finished building: ../src/Student.cpp
- 
-Building target: Inheritance
-Invoking: Cross G++ Linker
-g++  -o "Inheritance"  ./src/Inheritance.o ./src/Person.o ./src/Student.o   
-Finished building target: Inheritance
- 
-15:06:03 **** Incremental Build of configuration Debug for project Inheritance ****
+15:49:28 **** Incremental Build of configuration Debug for project FriendClasses ****
 make all 
 make: Nothing to be done for 'all'.
-15:07:26 **** Incremental Build of configuration Debug for project Inheritance ****
+15:49:30 **** Incremental Build of configuration Debug for project FriendClasses ****
 make all 
-Building file: ../src/Person.cpp
+make: Nothing to be done for 'all'.
+15:49:32 **** Incremental Build of configuration Debug for project FriendClasses ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:33 **** Incremental Build of configuration Debug for project FriendClasses ****
+make all 
+make: Nothing to be done for 'all'.
+15:50:14 **** Incremental Build of configuration Debug for project FriendClasses ****
+make all 
+Building file: ../src/Handle.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
-Finished building: ../src/Person.cpp
- 
-Building file: ../src/Student.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Handle.d" -MT"src/Handle.d" -o "src/Handle.o" "../src/Handle.cpp"
+../src/Handle.cpp: In member function ‘void Handle::someOperationOnBody()’:
+../src/Handle.cpp:28:53: error: found ‘:’ in nested-name-specifier, expected ‘::’
+  std::cout << "Some Data: " << body->someData << std:endl;
+                                                     ^
+src/subdir.mk:24: recipe for target 'src/Handle.o' failed
+make: *** [src/Handle.o] Error 1
+15:50:30 **** Incremental Build of configuration Debug for project FriendClasses ****
+make all 
+Building file: ../src/Handle.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
-Finished building: ../src/Student.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Handle.d" -MT"src/Handle.d" -o "src/Handle.o" "../src/Handle.cpp"
+Finished building: ../src/Handle.cpp
  
-Building target: Inheritance
+Building target: FriendClasses
 Invoking: Cross G++ Linker
-g++  -o "Inheritance"  ./src/Inheritance.o ./src/Person.o ./src/Student.o   
-Finished building target: Inheritance
+g++  -o "FriendClasses"  ./src/Body.o ./src/FriendClasses.o ./src/Handle.o   
+Finished building target: FriendClasses
  

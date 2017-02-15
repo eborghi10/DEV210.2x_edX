@@ -27,5 +27,7 @@ int main() {
 	pStudent2->displayNameAge();
 	pStudent2->displayCourse();
 
+	delete pStudent2;
+
 	return 0;
 }

@@ -23,6 +23,9 @@ public:
 	Student(std::string fName, std::string lName, int age, std::string course);
 	virtual ~Student();
 
+	void setAge(int age);
+	int getAge();
+
 	void displayCourse();
 };
 

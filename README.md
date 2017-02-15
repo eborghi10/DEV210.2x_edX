@@ -34,7 +34,9 @@ ___
 
 ## 3-MoreOOP
 
-- **Inheritance**: a base class and a child class, with special initialization.
+- **Inheritance**: a base class and a child class, with special initialization and protected variables.
+
+- **FriendClasses**: use the special case of the friend modifier.
 
 ---
 

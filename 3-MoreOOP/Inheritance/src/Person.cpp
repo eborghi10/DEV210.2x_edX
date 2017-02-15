@@ -23,7 +23,7 @@ Person::Person(std::string fName, std::string lName, int age) :
 }
 
 Person::~Person() {
-	// TODO Auto-generated destructor stub
+	std::cout << "Destructor called" << std::endl;
 }
 
 void Person::SayHello() {

@@ -1,0 +1,15 @@
+15:50:30 **** Incremental Build of configuration Debug for project FriendClasses ****
+make all 
+Building file: ../src/Handle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Handle.d" -MT"src/Handle.d" -o "src/Handle.o" "../src/Handle.cpp"
+Finished building: ../src/Handle.cpp
+ 
+Building target: FriendClasses
+Invoking: Cross G++ Linker
+g++  -o "FriendClasses"  ./src/Body.o ./src/FriendClasses.o ./src/Handle.o   
+Finished building target: FriendClasses
+ 
+
+15:50:31 Build Finished (took 353ms)
+

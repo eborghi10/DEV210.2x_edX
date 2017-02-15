@@ -1,0 +1,21 @@
+/*
+ * Handle.h
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef HANDLE_H_
+#define HANDLE_H_
+
+#include "Body.h"
+
+class Handle {
+// The "handle" class typically maintains an internal instance of the "body" class.
+	Body *body;
+public:
+	Handle();
+	virtual ~Handle();
+};
+
+#endif /* HANDLE_H_ */

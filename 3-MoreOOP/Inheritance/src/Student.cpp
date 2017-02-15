@@ -26,3 +26,20 @@ void Student::displayCourse() {
 	std::cout << "Course: " << this->course << std::endl;
 }
 
+/**
+ * Modifying a protected variable of the base (parent) class Person:
+ *
+ */
+
+void Student::setAge(int age) {
+
+	if (age < 5) {
+		std::cout << "Student age needs to at least 5 years old." << std::endl;
+	} else {
+		this->age = age;
+	}
+}
+
+int Student::getAge() {
+	return this->age;
+}

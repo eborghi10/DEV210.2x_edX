@@ -16,6 +16,12 @@ class Person {
 private:
 	std::string firstName;
 	std::string lastName;
+protected:
+	/**
+	 * When dealing with inheritance in your C++ code, you may find situations
+	 * where you would like to keep certain members of the base class private
+	 * to the "outside world" but public to derived classes of that base class.
+	 */
 	int age;
 public:
 	Person();
