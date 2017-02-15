@@ -1,0 +1,32 @@
+/*
+ * Person.h
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef PERSON_H_
+#define PERSON_H_
+
+/**
+ * Person: base class
+ *
+ */
+
+#pragma once
+
+#include <string>
+
+class Person {
+private:
+	std::string name;
+protected:
+	int age;
+public:
+	Person();
+	Person(std::string &name, int age);
+	virtual ~Person();
+	virtual void display() const;
+};
+
+#endif /* PERSON_H_ */

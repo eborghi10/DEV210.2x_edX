@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="59" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -8,18 +8,18 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="252" y="30"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="280" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="204" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -28,10 +28,36 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="VirtualFunctions.cpp" partName="VirtualFunctions.cpp" path="/home/emiliano/DEV210.2x-Programs/3-MoreOOP/VirtualFunctions/src/VirtualFunctions.cpp" title="VirtualFunctions.cpp" tooltip="VirtualFunctions/src/VirtualFunctions.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VirtualFunctions/src/VirtualFunctions.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="565" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Person.cpp" partName="Person.cpp" path="/home/emiliano/DEV210.2x-Programs/3-MoreOOP/VirtualFunctions/src/Person.cpp" title="Person.cpp" tooltip="VirtualFunctions/src/Person.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VirtualFunctions/src/Person.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="354" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Person.h" partName="Person.h" path="/home/emiliano/DEV210.2x-Programs/3-MoreOOP/VirtualFunctions/src/Person.h" title="Person.h" tooltip="VirtualFunctions/src/Person.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VirtualFunctions/src/Person.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="682" selectionTopPixel="115"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Student.cpp" partName="Student.cpp" path="/home/emiliano/DEV210.2x-Programs/3-MoreOOP/VirtualFunctions/src/Student.cpp" title="Student.cpp" tooltip="VirtualFunctions/src/Student.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VirtualFunctions/src/Student.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="172" selectionTopPixel="75"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Student.h" partName="Student.h" path="/home/emiliano/DEV210.2x-Programs/3-MoreOOP/VirtualFunctions/src/Student.h" title="Student.h" tooltip="VirtualFunctions/src/Student.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VirtualFunctions/src/Student.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="375" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
@@ -41,7 +67,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Errors (51 items)"/>
+<category IMemento.internal.id="Errors (3 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="266" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -75,7 +101,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -217,7 +243,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.24942264" ratioLeft="324" ratioRight="975" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.20679012" ratioLeft="268" ratioRight="1028" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.6261261" ratioLeft="417" ratioRight="249" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -247,12 +273,178 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VirtualFunctions/src/VirtualFunctions.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VirtualFunctions/src/Person.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VirtualFunctions/src/Student.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VirtualFunctions/src/Student.h"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/usr/include/c++/5/bits/stringfwd.h" project="VirtualFunctions"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VirtualFunctions/src/Person.h"/>
+</editors>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="97" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="157" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="166" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="511" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="187" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="383" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="264" y="63"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="591" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="368" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="stringfwd.h" index="4">
+<position info="not_deleted" x="2131" y="6"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="655" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="309" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="Person.h" index="5">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="309" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="356" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="472" y="0"/>
+</item>
+<item historyLabel="Person.h" index="5">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="Person.h" index="5">
+<position info="not_deleted" x="690" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="1">
+<position info="not_deleted" x="354" y="6"/>
+</item>
+<item historyLabel="Person.h" index="5">
+<position info="not_deleted" x="682" y="8"/>
+</item>
+<item historyLabel="Student.cpp" index="2">
+<position info="not_deleted" x="172" y="0"/>
+</item>
+<item historyLabel="Student.h" index="3">
+<position info="not_deleted" x="375" y="6"/>
+</item>
+<item active="true" historyLabel="VirtualFunctions.cpp" index="0">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -264,6 +456,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stringfwd.h" tooltip="/usr/include/c++/5/bits/stringfwd.h">
+<persistable path="/usr/include/c++/5/bits/stringfwd.h" project="VirtualFunctions"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Student.h" tooltip="VirtualFunctions/src/Student.h">
+<persistable path="/VirtualFunctions/src/Student.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Student.cpp" tooltip="VirtualFunctions/src/Student.cpp">
+<persistable path="/VirtualFunctions/src/Student.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Person.h" tooltip="VirtualFunctions/src/Person.h">
+<persistable path="/VirtualFunctions/src/Person.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Person.cpp" tooltip="VirtualFunctions/src/Person.cpp">
+<persistable path="/VirtualFunctions/src/Person.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="VirtualFunctions.cpp" tooltip="VirtualFunctions/src/VirtualFunctions.cpp">
+<persistable path="/VirtualFunctions/src/VirtualFunctions.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Body.h" tooltip="FriendClasses/src/Body.h">
 <persistable path="/FriendClasses/src/Body.h"/>
 </file>
@@ -290,24 +500,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Person.cpp" tooltip="Inheritance/src/Person.cpp">
 <persistable path="/Inheritance/src/Person.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Inheritance.cpp" tooltip="Inheritance/src/Inheritance.cpp">
-<persistable path="/Inheritance/src/Inheritance.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Teacher.cpp" tooltip="CourseClasses/src/Teacher.cpp">
-<persistable path="/CourseClasses/src/Teacher.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Student.cpp" tooltip="CourseClasses/src/Student.cpp">
-<persistable path="/CourseClasses/src/Student.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Course.cpp" tooltip="CourseClasses/src/Course.cpp">
-<persistable path="/CourseClasses/src/Course.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CourseClasses.cpp" tooltip="CourseClasses/src/CourseClasses.cpp">
-<persistable path="/CourseClasses/src/CourseClasses.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Course.h" tooltip="CourseClasses/src/Course.h">
-<persistable path="/CourseClasses/src/Course.h"/>
 </file>
 </mruList>
 </workbench>

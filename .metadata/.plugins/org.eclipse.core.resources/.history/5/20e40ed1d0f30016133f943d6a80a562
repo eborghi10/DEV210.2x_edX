@@ -1,0 +1,16 @@
+/*
+ * Student.cpp
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#include <iostream>
+#include "Student.h"
+
+Student::Student() : course("Unassigned course") {}
+
+Student::~Student() {
+	// TODO Auto-generated destructor stub
+}
+

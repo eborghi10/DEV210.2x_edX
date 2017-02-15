@@ -1,0 +1,17 @@
+/*
+ * Person.h
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef PERSON_H_
+#define PERSON_H_
+
+class Person {
+public:
+	Person();
+	virtual ~Person();
+};
+
+#endif /* PERSON_H_ */

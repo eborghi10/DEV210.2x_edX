@@ -1,0 +1,24 @@
+/*
+ * Student.h
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef STUDENT_H_
+#define STUDENT_H_
+
+/**
+ * Student: Inherited class from Person
+ *
+ */
+
+#include "Person.h"
+
+class Student : public Person {
+public:
+	Student();
+	virtual ~Student();
+};
+
+#endif /* STUDENT_H_ */

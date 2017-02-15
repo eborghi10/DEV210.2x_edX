@@ -38,6 +38,8 @@ ___
 
 - **FriendClasses**: use the special case of the friend modifier.
 
+- **VirtualFunctions**: using virtual function and virtual constructors (overriding technique).
+
 ---
 
 ## 4-StreamsAndFiles

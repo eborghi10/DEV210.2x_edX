@@ -1,0 +1,30 @@
+/*
+ * Student.cpp
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#include <iostream>
+#include "Student.h"
+
+Student::Student() : course("Unassigned course") {}
+
+Student::Student(std::string & name, int age, const std::string & course) :
+		Person(name, age), course(course) {}
+
+Student::~Student() {
+	std::cout << "Goodbye from the Student destructor" << std::endl;
+}
+
+void Student::display() const {
+	/**
+	 * Call the virtual function declared in the base class, like super() in Java.
+	 * (Shows the Person's related info)
+	 *
+	 */
+	Person::display();
+
+	// Now display the info related to the Student
+}
+

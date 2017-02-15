@@ -1,35 +1,35 @@
-15:49:28 **** Incremental Build of configuration Debug for project FriendClasses ****
+20:26:41 **** Incremental Build of configuration Debug for project VirtualFunctions ****
 make all 
-make: Nothing to be done for 'all'.
-15:49:30 **** Incremental Build of configuration Debug for project FriendClasses ****
-make all 
-make: Nothing to be done for 'all'.
-15:49:32 **** Incremental Build of configuration Debug for project FriendClasses ****
-make all 
-make: Nothing to be done for 'all'.
-15:49:33 **** Incremental Build of configuration Debug for project FriendClasses ****
-make all 
-make: Nothing to be done for 'all'.
-15:50:14 **** Incremental Build of configuration Debug for project FriendClasses ****
-make all 
-Building file: ../src/Handle.cpp
+Building file: ../src/Person.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Handle.d" -MT"src/Handle.d" -o "src/Handle.o" "../src/Handle.cpp"
-../src/Handle.cpp: In member function ‘void Handle::someOperationOnBody()’:
-../src/Handle.cpp:28:53: error: found ‘:’ in nested-name-specifier, expected ‘::’
-  std::cout << "Some Data: " << body->someData << std:endl;
-                                                     ^
-src/subdir.mk:24: recipe for target 'src/Handle.o' failed
-make: *** [src/Handle.o] Error 1
-15:50:30 **** Incremental Build of configuration Debug for project FriendClasses ****
-make all 
-Building file: ../src/Handle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
+Finished building: ../src/Person.cpp
+ 
+Building file: ../src/Student.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Handle.d" -MT"src/Handle.d" -o "src/Handle.o" "../src/Handle.cpp"
-Finished building: ../src/Handle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
  
-Building target: FriendClasses
-Invoking: Cross G++ Linker
-g++  -o "FriendClasses"  ./src/Body.o ./src/FriendClasses.o ./src/Handle.o   
-Finished building target: FriendClasses
- 
+Building file: ../src/VirtualFunctions.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/VirtualFunctions.d" -MT"src/VirtualFunctions.d" -o "src/VirtualFunctions.o" "../src/VirtualFunctions.cpp"
+../src/VirtualFunctions.cpp: In function ‘int main()’:
+../src/VirtualFunctions.cpp:27:13: error: invalid initialization of non-const reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ from an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+    "Physics");
+             ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../src/VirtualFunctions.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:454:7: note:   after user-defined conversion: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+       ^
+In file included from ../src/VirtualFunctions.cpp:10:0:
+../src/Student.h:23:2: note:   initializing argument 1 of ‘Student::Student(std::__cxx11::string&, int, std::__cxx11::string)’
+  Student(std::string & name, int age, std::string course);
+  ^
+src/subdir.mk:24: recipe for target 'src/VirtualFunctions.o' failed
+make: *** [src/VirtualFunctions.o] Error 1
