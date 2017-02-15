@@ -1,0 +1,20 @@
+15:07:26 **** Incremental Build of configuration Debug for project Inheritance ****
+make all 
+Building file: ../src/Person.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
+Finished building: ../src/Person.cpp
+ 
+Building file: ../src/Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: Inheritance
+Invoking: Cross G++ Linker
+g++  -o "Inheritance"  ./src/Inheritance.o ./src/Person.o ./src/Student.o   
+Finished building target: Inheritance
+ 
+
+15:07:27 Build Finished (took 629ms)
+

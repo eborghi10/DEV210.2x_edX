@@ -1,0 +1,36 @@
+/*
+ * Person.cpp
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#include <iostream>
+#include "Person.h"
+
+Person::Person() : firstName(""), lastName(""), age(0) {
+
+}
+
+Person::Person(std::string fName, std::string &lName) :
+		firstName(fName), lastName(lName), age(0) {
+
+}
+
+Person::Person(std::string fName, std::string &lName, int age) :
+		firstName(fName), lastName(lName), age(age) {
+
+}
+
+Person::~Person() {
+	// TODO Auto-generated destructor stub
+}
+
+void Person::SayHello() {
+	std::cout << "Hello!" << std::endl;
+}
+
+void Person::displayNameAge() const {
+	std::cout << "Name: " << this->firstName << " " << this->lastName << std::endl;
+	std::cout << "Age: " << this->age << std::endl;
+}

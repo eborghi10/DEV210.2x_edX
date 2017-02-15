@@ -1,5 +1,10 @@
-19:09:17 **** Incremental Build of configuration Debug for project ConstructorsAndDestructors ****
+13:03:13 **** Incremental Build of configuration Debug for project ConstructorsAndDestructors ****
 make all 
+Building file: ../src/Dog.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Dog.d" -MT"src/Dog.d" -o "src/Dog.o" "../src/Dog.cpp"
+Finished building: ../src/Dog.cpp
+ 
 Building file: ../src/Person.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
@@ -7,9 +12,9 @@ Finished building: ../src/Person.cpp
  
 Building target: ConstructorsAndDestructors
 Invoking: Cross G++ Linker
-g++  -o "ConstructorsAndDestructors"  ./src/ConstructorsAndDestructors.o ./src/Person.o   
+g++  -o "ConstructorsAndDestructors"  ./src/ConstructorsAndDestructors.o ./src/Dog.o ./src/Person.o   
 Finished building target: ConstructorsAndDestructors
  
 
-19:09:17 Build Finished (took 405ms)
+13:03:13 Build Finished (took 754ms)
 

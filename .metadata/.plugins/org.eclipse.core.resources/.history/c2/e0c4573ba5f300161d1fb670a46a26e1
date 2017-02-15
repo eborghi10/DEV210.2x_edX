@@ -1,0 +1,22 @@
+/*
+ * Person.cpp
+ *
+ *  Created on: 15 Feb 2017
+ *      Author: emiliano
+ */
+
+#include <iostream>
+#include "Person.h"
+
+Person::Person() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Person::~Person() {
+	// TODO Auto-generated destructor stub
+}
+
+void Person::SayHello() {
+	std::cout << "Hello!" << std::endl;
+}

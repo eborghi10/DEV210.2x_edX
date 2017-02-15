@@ -26,11 +26,15 @@ ___
 
 - **SplittingClasses**: implementing a class with separate files (.cpp and .h).
 
-- **ConstructorsAndDestructors**: 
+- **ConstructorsAndDestructors**: basic class implementation.
+
+- **CourseClasses**: course management using classes.
 
 ---
 
 ## 3-MoreOOP
+
+- **Inheritance**: a base class and a child class, with special initialization.
 
 ---
 
