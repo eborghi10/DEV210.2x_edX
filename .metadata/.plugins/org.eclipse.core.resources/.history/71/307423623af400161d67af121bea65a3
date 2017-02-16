@@ -1,0 +1,62 @@
+/*
+ * SavingsAccount.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include <iostream>
+#include <sstream>
+#include "SavingsAccount.h"
+
+SavingsAccount::SavingsAccount(double initialBalance, double interestRate)
+	: BankAccount(initialBalance), interestRate(interestRate), frozen(false) {}
+
+SavingsAccount::~SavingsAccount() {}
+
+
+void SavingsAccount::earnInterest() {
+	if(!this->frozen) {
+		double interest = this->balance * (this->interestRate / 100);
+		deposit(interest);
+	}
+}
+
+void SavingsAccount::deposit(double amount) {
+	if(!this->frozen) {
+		BankAccount::deposit(amount);
+		std::stringstream ss;
+		ss << amount;
+		log("Deposit: " + ss.str());
+	}
+}
+
+void SavingsAccount::withdraw(double amount) {
+	// Makes sure we have enough money
+	if(!this->frozen && amount <= this->balance) {
+		BankAccount::withdraw(amount);
+		log("Withdraw: " + std::to_string(amount));
+	}
+}
+
+// Implement the pure virtual functions
+std::string SavingsAccount::getTermsAndConditions() {
+	return "This is a savings account. You cannot go overdrawn. You earn interest.";
+}
+
+double SavingsAccount::getGuaranteedLimit() {
+	return 75000;
+}
+
+void SavingsAccount::log(const std::string & message) const {
+	std::cout << message << std::endl;
+}
+
+void SavingsAccount::freeze() {
+	this->frozen = true;
+}
+
+void SavingsAccount::unfreeze() {
+	this->frozen = false;
+}
+

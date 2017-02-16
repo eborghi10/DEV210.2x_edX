@@ -35,7 +35,7 @@ public:
 	 *
 	 */
 	virtual ~Person();
-	virtual void display() const;
+	virtual void displayInfo() const;
 };
 
 #endif /* PERSON_H_ */

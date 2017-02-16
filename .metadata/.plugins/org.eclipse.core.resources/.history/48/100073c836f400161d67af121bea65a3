@@ -1,0 +1,31 @@
+/*
+ * SavingsAccount.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "SavingsAccount.h"
+
+SavingsAccount::SavingsAccount(double initialBalance, double interestRate)
+	: BankAccount(initialBalance), interestRate(interestRate), frozen(false){}
+
+SavingsAccount::~SavingsAccount() {
+	// TODO Auto-generated destructor stub
+}
+
+
+	void earnInterest();
+
+	virtual void deposit(double amount);
+	virtual void withdraw(double amount);
+
+	// Implement the pure virtual functions
+	virtual std::string getTermsAndConditions();
+	virtual double getGuaranteedLimit();
+
+	virtual void log(const std::string & message) const;
+
+	virtual void freeze();
+	virtual void unfreeze();
+

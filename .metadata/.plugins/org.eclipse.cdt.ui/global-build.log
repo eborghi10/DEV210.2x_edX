@@ -1,35 +1,15 @@
-20:26:41 **** Incremental Build of configuration Debug for project VirtualFunctions ****
+08:24:25 **** Incremental Build of configuration Debug for project InterfacesAndAbstractClasses ****
 make all 
-Building file: ../src/Person.cpp
+Building file: ../src/SavingsAccount.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
-Finished building: ../src/Person.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SavingsAccount.d" -MT"src/SavingsAccount.d" -o "src/SavingsAccount.o" "../src/SavingsAccount.cpp"
+Finished building: ../src/SavingsAccount.cpp
  
-Building file: ../src/Student.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
-Finished building: ../src/Student.cpp
+Building target: InterfacesAndAbstractClasses
+Invoking: Cross G++ Linker
+g++  -o "InterfacesAndAbstractClasses"  ./src/BankAccount.o ./src/InterfacesAndAbstractClasses.o ./src/SavingsAccount.o   
+Finished building target: InterfacesAndAbstractClasses
  
-Building file: ../src/VirtualFunctions.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/VirtualFunctions.d" -MT"src/VirtualFunctions.d" -o "src/VirtualFunctions.o" "../src/VirtualFunctions.cpp"
-../src/VirtualFunctions.cpp: In function ‘int main()’:
-../src/VirtualFunctions.cpp:27:13: error: invalid initialization of non-const reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ from an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
-    "Physics");
-             ^
-In file included from /usr/include/c++/5/string:52:0,
-                 from /usr/include/c++/5/bits/locale_classes.h:40,
-                 from /usr/include/c++/5/bits/ios_base.h:41,
-                 from /usr/include/c++/5/ios:42,
-                 from /usr/include/c++/5/ostream:38,
-                 from /usr/include/c++/5/iostream:39,
-                 from ../src/VirtualFunctions.cpp:9:
-/usr/include/c++/5/bits/basic_string.h:454:7: note:   after user-defined conversion: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
-       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
-       ^
-In file included from ../src/VirtualFunctions.cpp:10:0:
-../src/Student.h:23:2: note:   initializing argument 1 of ‘Student::Student(std::__cxx11::string&, int, std::__cxx11::string)’
-  Student(std::string & name, int age, std::string course);
-  ^
-src/subdir.mk:24: recipe for target 'src/VirtualFunctions.o' failed
-make: *** [src/VirtualFunctions.o] Error 1
+08:24:29 **** Incremental Build of configuration Debug for project InterfacesAndAbstractClasses ****
+make all 
+make: Nothing to be done for 'all'.

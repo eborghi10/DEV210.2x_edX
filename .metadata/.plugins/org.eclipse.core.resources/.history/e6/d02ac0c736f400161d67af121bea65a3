@@ -1,0 +1,18 @@
+/*
+ * SavingsAccount.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "SavingsAccount.h"
+
+SavingsAccount::SavingsAccount() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SavingsAccount::~SavingsAccount() {
+	// TODO Auto-generated destructor stub
+}
+

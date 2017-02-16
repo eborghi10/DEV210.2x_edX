@@ -1,0 +1,19 @@
+/*
+ * BankAccount.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+#pragma once
+#include "BankAccount.h"
+#include <string>
+
+BankAccount::BankAccount() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BankAccount::~BankAccount() {
+	// TODO Auto-generated destructor stub
+}
+

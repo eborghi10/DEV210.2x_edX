@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;InterfacesAndAbstractClasses/src/Lockable.h&apos; to &apos;Loggable.h&apos;" description="Rename resource &apos;Lockable.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Lockable.h" name="Loggable.h" stamp="1487241873201" updateReferences="true"/>
+</session>

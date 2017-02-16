@@ -1,0 +1,32 @@
+//============================================================================
+// Name        : InterfacesAndAbstractClasses.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "SavingsAccount.h"
+using namespace std;
+
+void freezeMe(Freezable & f) {
+	// We don't know what type of object "f" refers to.
+	// All we know is that it implements "Freezable".
+	f.freeze();
+}
+
+int main() {
+
+	SavingsAccount acc(1000, 2.5);
+
+	std::cout << "Terms and conditions: " << acc.getTermsAndConditions() << std::endl;
+	std::cout << "Guarantee limit: " << acc.getGuaranteedLimit() << std::endl;
+
+	acc.deposit(100);
+	acc.deposit(200);
+	acc.withdraw(50);
+	acc.earnInterest();
+
+	return 0;
+}

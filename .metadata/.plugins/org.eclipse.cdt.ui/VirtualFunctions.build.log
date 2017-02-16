@@ -1,10 +1,5 @@
-20:26:41 **** Incremental Build of configuration Debug for project VirtualFunctions ****
+07:34:22 **** Incremental Build of configuration Debug for project VirtualFunctions ****
 make all 
-Building file: ../src/Person.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Person.d" -MT"src/Person.d" -o "src/Person.o" "../src/Person.cpp"
-Finished building: ../src/Person.cpp
- 
 Building file: ../src/Student.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
@@ -14,7 +9,7 @@ Building file: ../src/VirtualFunctions.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/VirtualFunctions.d" -MT"src/VirtualFunctions.d" -o "src/VirtualFunctions.o" "../src/VirtualFunctions.cpp"
 ../src/VirtualFunctions.cpp: In function ‘int main()’:
-../src/VirtualFunctions.cpp:27:13: error: invalid initialization of non-const reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ from an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+../src/VirtualFunctions.cpp:36:13: error: invalid initialization of non-const reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ from an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
     "Physics");
              ^
 In file included from /usr/include/c++/5/string:52:0,
@@ -28,11 +23,11 @@ In file included from /usr/include/c++/5/string:52:0,
        basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
        ^
 In file included from ../src/VirtualFunctions.cpp:10:0:
-../src/Student.h:23:2: note:   initializing argument 1 of ‘Student::Student(std::__cxx11::string&, int, std::__cxx11::string)’
-  Student(std::string & name, int age, std::string course);
+../src/Student.h:23:2: note:   initializing argument 1 of ‘Student::Student(std::__cxx11::string&, int, const string&)’
+  Student(std::string & name, int age, const std::string & course);
   ^
 src/subdir.mk:24: recipe for target 'src/VirtualFunctions.o' failed
 make: *** [src/VirtualFunctions.o] Error 1
 
-20:26:42 Build Finished (took 808ms)
+07:34:23 Build Finished (took 607ms)
 

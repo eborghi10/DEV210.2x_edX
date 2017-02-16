@@ -1,0 +1,19 @@
+/*
+ * Lockable.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef LOCKABLE_H_
+#define LOCKABLE_H_
+
+
+class Lockable {
+public:
+	virtual void log(const std::string & message) const = 0;
+};
+
+
+
+#endif /* LOCKABLE_H_ */

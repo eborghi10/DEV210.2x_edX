@@ -20,10 +20,10 @@ private:
 	std::string course;
 public:
 	Student();
-	Student(std::string & name, int age, std::string course);
+	Student(std::string & name, int age, const std::string & course);
 	virtual ~Student();
 
-	virtual void display() const;
+	virtual void displayInfo() const;
 };
 
 #endif /* STUDENT_H_ */

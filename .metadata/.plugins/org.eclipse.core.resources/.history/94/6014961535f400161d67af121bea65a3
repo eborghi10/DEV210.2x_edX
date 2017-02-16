@@ -1,0 +1,25 @@
+/*
+ * SavingsAccount.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef SAVINGSACCOUNT_H_
+#define SAVINGSACCOUNT_H_
+
+#pragma once
+#include "BankAccount.h"
+#include "Freezable.h"
+#include "Loggable.h"
+
+#include <list>
+
+class SavingsAccount :
+	public BankAccount, public Freezable, public Loggable {
+public:
+	SavingsAccount();
+	virtual ~SavingsAccount();
+};
+
+#endif /* SAVINGSACCOUNT_H_ */

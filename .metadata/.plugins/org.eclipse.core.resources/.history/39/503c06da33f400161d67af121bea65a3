@@ -1,0 +1,17 @@
+/*
+ * BankAccount.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef BANKACCOUNT_H_
+#define BANKACCOUNT_H_
+
+class BankAccount {
+public:
+	BankAccount();
+	virtual ~BankAccount();
+};
+
+#endif /* BANKACCOUNT_H_ */

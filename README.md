@@ -40,6 +40,8 @@ ___
 
 - **VirtualFunctions**: using virtual function and virtual constructors (overriding technique).
 
+- **InterfacesAndAbstractClasses**: a.k.a. Abstract functions and abstract classes.
+
 ---
 
 ## 4-StreamsAndFiles

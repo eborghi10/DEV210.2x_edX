@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : VirtualFunctions.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Student.h"
+
+using namespace std;
+
+void demoFunction1(Person *ptr);
+void demoFunction2(Person &ref);
+
+int main() {
+
+	/**
+	 * Implements POLYMORPHISM
+	 *
+	 */
+	std::string palabra = "Physics";
+	Person *person = new Student(
+			"Jane Smith",
+			18,
+			palabra);
+
+	/**
+	 * p will use the function display() from the object Student, not from Person.
+	 */
+	person->displayInfo();
+
+	demoFunction1(person);
+	demoFunction2(*person);
+
+	delete person;
+
+	return 0;
+}
+
+void demoFunction1(Person *ptr) {
+	ptr->displayInfo();
+}
+
+void demoFunction2(Person &ref) {
+	ref.displayInfo();
+}

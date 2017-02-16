@@ -1,0 +1,38 @@
+/*
+ * BankAccount.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef BANKACCOUNT_H_
+#define BANKACCOUNT_H_
+
+#include <string>
+
+class BankAccount {
+protected:
+	double balance;
+public:
+	BankAccount(double initialBalance);
+	virtual ~BankAccount();
+
+	double getBalance() const;
+
+	/**
+	 * The following 2 virtual functions are overridable because other banks have
+	 * different rules or deposit() and withdraw().
+	 *
+	 */
+	virtual void deposit(double amount);
+	virtual void withdraw(double amount);
+
+	/**
+	 * Pure virtual functions () = 0
+	 * They MUST be overriden in subclasses.
+	 */
+	virtual std::string getTermsAndConditions() = 0;
+	virtual double getGuaranteedLimit() = 0;
+};
+
+#endif /* BANKACCOUNT_H_ */
