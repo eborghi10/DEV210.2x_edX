@@ -1,0 +1,22 @@
+/*
+ * Teacher.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef TEACHER_H_
+#define TEACHER_H_
+
+class Teacher : public Person {
+public:
+	Teacher();
+	Teacher(std::string, std::string, int, std::string, long);
+	virtual ~Teacher();
+
+	virtual void OutputAge();
+	// Pure virtual
+	virtual void OutputIdentity();
+};
+
+#endif /* TEACHER_H_ */

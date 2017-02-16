@@ -42,6 +42,8 @@ ___
 
 - **InterfacesAndAbstractClasses**: a.k.a. Abstract functions and abstract classes.
 
+- **ModuleThree**: complete exercise of the topics seen previously.
+
 ---
 
 ## 4-StreamsAndFiles

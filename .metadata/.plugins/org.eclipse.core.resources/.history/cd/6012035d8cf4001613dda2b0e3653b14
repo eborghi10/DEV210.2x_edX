@@ -1,0 +1,27 @@
+/*
+ * Person.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef PERSON_H_
+#define PERSON_H_
+
+class Person {
+private:
+	std::string firstName;
+	std::string lastName;
+	int age;
+	std::string race;
+protected:
+	long phoneNumber;
+public:
+	Person();
+	virtual ~Person();
+
+	// Pure virtual function
+	virtual void OutputIdentity() = 0;
+};
+
+#endif /* PERSON_H_ */

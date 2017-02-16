@@ -1,0 +1,21 @@
+/*
+ * Person.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Person.h"
+
+Person::Person() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Person::~Person() {
+	// TODO Auto-generated destructor stub
+}
+
+virtual void Person::OutputAge() {
+	std::cout << "I am " << this->age << " years old" << std::endl;
+}

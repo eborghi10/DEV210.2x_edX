@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : ModuleThree.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	Student *pStudent = new Student(
+			"Sancho",
+			"Panza",
+			34,
+			"Latin",
+			12345678
+			);
+
+	return 0;
+}

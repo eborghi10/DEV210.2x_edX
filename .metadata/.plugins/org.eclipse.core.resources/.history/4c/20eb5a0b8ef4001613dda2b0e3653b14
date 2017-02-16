@@ -1,0 +1,19 @@
+/*
+ * Teacher.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef TEACHER_H_
+#define TEACHER_H_
+
+#include "Person.h"
+
+class Teacher : public Person {
+public:
+	Teacher();
+	virtual ~Teacher();
+};
+
+#endif /* TEACHER_H_ */

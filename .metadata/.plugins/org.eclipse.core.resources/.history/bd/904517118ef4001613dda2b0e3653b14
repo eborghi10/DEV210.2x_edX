@@ -1,0 +1,18 @@
+/*
+ * Teacher.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Teacher.h"
+
+Teacher::Teacher() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Teacher::~Teacher() {
+	// TODO Auto-generated destructor stub
+}
+

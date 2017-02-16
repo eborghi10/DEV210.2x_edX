@@ -1,0 +1,15 @@
+20:53:18 **** Incremental Build of configuration Debug for project ModuleThree ****
+make all 
+Building file: ../src/ModuleThree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ModuleThree.d" -MT"src/ModuleThree.d" -o "src/ModuleThree.o" "../src/ModuleThree.cpp"
+Finished building: ../src/ModuleThree.cpp
+ 
+Building target: ModuleThree
+Invoking: GCC C++ Linker
+g++  -o "ModuleThree"  ./src/ModuleThree.o ./src/Person.o ./src/Student.o ./src/Teacher.o   
+Finished building target: ModuleThree
+ 
+
+20:53:19 Build Finished (took 454ms)
+

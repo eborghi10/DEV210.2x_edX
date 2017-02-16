@@ -1,0 +1,14 @@
+/*
+ * Teacher.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Teacher.h"
+#include "Person.h"
+
+Teacher::Teacher() {}
+
+Teacher::~Teacher() {}
+

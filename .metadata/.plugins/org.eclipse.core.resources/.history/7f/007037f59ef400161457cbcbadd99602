@@ -1,0 +1,18 @@
+/*
+ * Student.h
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef STUDENT_H_
+#define STUDENT_H_
+
+class Student : public Person {
+public:
+	Student();
+	Student(std::string, std::string, int, std::string, long);
+	virtual ~Student();
+};
+
+#endif /* STUDENT_H_ */

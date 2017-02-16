@@ -1,0 +1,18 @@
+/*
+ * Student.cpp
+ *
+ *  Created on: 16 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Student.h"
+
+Student::Student(std::string, std::string, int, std::string, long) {
+	: firstName("Unknown first name"), lastName("Unknown last name"), age(0),
+		  race("Unknown race"), phoneNumber(00000000) {}
+}
+
+Student::~Student() {
+	// TODO Auto-generated destructor stub
+}
+
