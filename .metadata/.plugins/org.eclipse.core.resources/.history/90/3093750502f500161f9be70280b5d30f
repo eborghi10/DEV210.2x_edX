@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : StreamOutputFormatting.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include "demoFieldWidth.h"
+#include "demoJustification.h"
+
+using namespace std;
+
+
+void demoFloatingPoint();
+
+void demoMiscManipulators();
+
+int main() {
+
+	cout << "### Field Width ###" << endl << endl;
+	demoFieldWidth();
+	cout << endl << "### Justification ###" << endl << endl;
+	demoJustification();
+	//demoFloatingPoint();
+	//demoMiscManipulators();
+
+	return 0;
+}

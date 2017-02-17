@@ -1,6 +1,6 @@
-08:24:29 **** Incremental Build of configuration Debug for project InterfacesAndAbstractClasses ****
+07:13:25 **** Incremental Build of configuration Debug for project InterfacesAndAbstractClasses ****
 make all 
 make: Nothing to be done for 'all'.
 
-08:24:29 Build Finished (took 60ms)
+07:13:26 Build Finished (took 738ms)
 

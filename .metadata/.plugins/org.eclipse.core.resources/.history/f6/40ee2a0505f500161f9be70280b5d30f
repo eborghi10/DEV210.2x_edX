@@ -1,0 +1,26 @@
+/*
+ * demoMiscManipulators.cpp
+ *
+ *  Created on: 17 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "demoMiscManipulators.h"
+
+void demoMiscManipulators() {
+
+	int x = 3;
+	int y = 4;
+	int z = -5;
+
+	// Showing/hiding + sign
+	std::cout << x << "\t" << y << "\t" << z << std::endl;
+	std::cout << std::showpos;
+	std::cout << x << "\t" << y << "\t" << z << std::endl;
+	std::cout << std::noshowpos;
+	std::cout << x << "\t" << y << "\t" << z << std::endl << std:: endl;
+
+	// Formatting numbers in different bases
+}
+
+

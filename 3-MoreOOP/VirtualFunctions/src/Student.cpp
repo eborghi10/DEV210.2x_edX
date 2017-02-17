@@ -5,7 +5,6 @@
  *      Author: emiliano
  */
 
-#include <iostream>
 #include "Student.h"
 
 Student::Student() : course("Unassigned course") {}

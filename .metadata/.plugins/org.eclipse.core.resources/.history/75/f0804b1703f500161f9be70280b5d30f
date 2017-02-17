@@ -1,0 +1,25 @@
+/*
+ * demoFloatingPoint.cpp
+ *
+ *  Created on: 17 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "demoFloatingPoint.h"
+
+void demoFloatingPoint() {
+
+	double pi = 3.14159265358979;
+	double s = 1.989E30;
+	double n = 42.0;
+
+	// Set the precision
+	// std::cout << std::setprecision(4);
+
+	// DEFAULT (i.e. general) format
+	std::cout << pi << std::endl;
+	std::cout << s << std::endl;
+	std::cout << n << std::endl;
+}
+
+

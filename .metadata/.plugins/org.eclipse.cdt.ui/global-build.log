@@ -1,43 +1,15 @@
-20:53:01 **** Incremental Build of configuration Debug for project ModuleThree ****
+08:39:50 **** Incremental Build of configuration Debug for project StreamOutputFormatting ****
 make all 
-Building file: ../src/ModuleThree.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ModuleThree.d" -MT"src/ModuleThree.d" -o "src/ModuleThree.o" "../src/ModuleThree.cpp"
-Finished building: ../src/ModuleThree.cpp
+Building file: ../src/demoMiscManipulators.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demoMiscManipulators.d" -MT"src/demoMiscManipulators.d" -o "src/demoMiscManipulators.o" "../src/demoMiscManipulators.cpp"
+Finished building: ../src/demoMiscManipulators.cpp
  
-Building file: ../src/Student.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
-Finished building: ../src/Student.cpp
+Building target: StreamOutputFormatting
+Invoking: Cross G++ Linker
+g++  -o "StreamOutputFormatting"  ./src/StreamOutputFormatting.o ./src/demoFieldWidth.o ./src/demoFloatingPoint.o ./src/demoJustification.o ./src/demoMiscManipulators.o   
+Finished building target: StreamOutputFormatting
  
-Building target: ModuleThree
-Invoking: GCC C++ Linker
-g++  -o "ModuleThree"  ./src/ModuleThree.o ./src/Person.o ./src/Student.o ./src/Teacher.o   
-./src/Student.o:(.rodata._ZTV7Student[_ZTV7Student]+0x28): undefined reference to `Student::OutputIdentity()'
-collect2: error: ld returned 1 exit status
-makefile:45: recipe for target 'ModuleThree' failed
-make: *** [ModuleThree] Error 1
-20:53:10 **** Incremental Build of configuration Debug for project ModuleThree ****
+08:39:52 **** Incremental Build of configuration Debug for project StreamOutputFormatting ****
 make all 
-Building file: ../src/Student.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.d" -o "src/Student.o" "../src/Student.cpp"
-Finished building: ../src/Student.cpp
- 
-Building target: ModuleThree
-Invoking: GCC C++ Linker
-g++  -o "ModuleThree"  ./src/ModuleThree.o ./src/Person.o ./src/Student.o ./src/Teacher.o   
-Finished building target: ModuleThree
- 
-20:53:18 **** Incremental Build of configuration Debug for project ModuleThree ****
-make all 
-Building file: ../src/ModuleThree.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ModuleThree.d" -MT"src/ModuleThree.d" -o "src/ModuleThree.o" "../src/ModuleThree.cpp"
-Finished building: ../src/ModuleThree.cpp
- 
-Building target: ModuleThree
-Invoking: GCC C++ Linker
-g++  -o "ModuleThree"  ./src/ModuleThree.o ./src/Person.o ./src/Student.o ./src/Teacher.o   
-Finished building target: ModuleThree
- 
+make: Nothing to be done for 'all'.

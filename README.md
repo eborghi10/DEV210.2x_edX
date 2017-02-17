@@ -47,3 +47,5 @@ ___
 ---
 
 ## 4-StreamsAndFiles
+
+-**StreamOutputFormatting**: example of using streams manipulators of the _iomanip_ library.

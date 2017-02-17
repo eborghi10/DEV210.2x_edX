@@ -14,7 +14,7 @@
  */
 
 #pragma once
-
+#include <iostream>
 #include <string>
 
 class Person {
@@ -24,7 +24,7 @@ protected:
 	int age;
 public:
 	Person();
-	Person(std::string &name, int age);
+	Person(std::string & name, int age);
 	/**
 	 * The virtual modifier is used when an OVERRIDING wants to be implemented.
 	 * If the same function is declared in a child class (eg. class Student,

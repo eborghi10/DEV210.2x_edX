@@ -1,0 +1,30 @@
+//============================================================================
+// Name        : StreamOutputFormatting.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <iomanip>		// setw(): set Width
+
+using namespace std;
+
+/**
+ * Test the field "width" using the streams manipulator setw()
+ */
+void demoFieldWidth();
+void demoJustification();
+void demoFloatingPoint();
+void demoMiscManipulators();
+
+int main() {
+
+	void demoFieldWidth();
+	//void demoJustification();
+	//void demoFloatingPoint();
+	//void demoMiscManipulators();
+
+	return 0;
+}

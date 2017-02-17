@@ -5,12 +5,11 @@
  *      Author: emiliano
  */
 
-#include <iostream>
 #include "Person.h"
 
 Person::Person() : name("Unknown name"), age(0) {}
 
-Person::Person(std::string &name, int age) :
+Person::Person(std::string & name, int age) :
 		name(name), age(age) {}
 
 Person::~Person() {

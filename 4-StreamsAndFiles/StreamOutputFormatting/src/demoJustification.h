@@ -1,0 +1,18 @@
+/*
+ * demoJustification.h
+ *
+ *  Created on: 17 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef DEMOJUSTIFICATION_H_
+#define DEMOJUSTIFICATION_H_
+
+#pragma once
+
+#include <iostream>
+#include <iomanip>
+
+void demoJustification();
+
+#endif /* DEMOJUSTIFICATION_H_ */
