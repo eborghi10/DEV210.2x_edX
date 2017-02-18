@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : StringStream.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <sstream>
+#include "TempStat.h"
+using namespace std;
+
+int main() {
+
+	// Write a file in binary format
+	std::ostringstream oss(std::ios_base::binary);
+
+	TempStat().write(oss);
+
+	return 0;
+}

@@ -1,0 +1,84 @@
+//============================================================================
+// Name        : FileManagement.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+	/**
+	 * Output methods
+	 *
+	 */
+	std::ofstream ofile;			// Ouput file stream
+	// Opens file1.dat for writing, and replace the existing content
+	ofile.open("files/file1.txt", std::ios_base::trunc);
+
+	std::fstream iofile1("files/file5.txt", std::ios_base::out);
+
+	/**
+	 * Input methods
+	 *
+	 */
+	std::ifstream ifile;			// Input file stream
+	ifile.open("files/file2.txt");  // Opens file2.dat for reading.
+
+	// Opened in binary mode : no formatting will be applied to values when they are read or written.
+	std::fstream iofile2("files/file6.txt", std::ios_base::in | std::ios_base::binary);
+
+	/**
+	 * I/O methods
+	 *
+	 */
+	std::fstream  iofile3;			// I/O file stream
+	iofile3.open("files/file3.txt");   // Opens file3.dat for reading/writing.
+
+	// The I/O operations will occur at the end of the file, preserving the existing content in the file.
+	std::fstream iofile4("files/file4.txt", std::ios_base::app);
+
+	if( ifile.is_open() && ofile.is_open() && iofile1.is_open()
+			&& iofile2.is_open() && iofile3.is_open() && iofile4.is_open() ) {
+
+		/**
+		 * All files opened correctly
+		 *
+		 */
+
+		// Writing operation
+		ofile << "Writing new data in the file." << std::endl;
+		ofile << "Writing new sentence.";
+
+		const char* newText = "Writing text into the file - Method 2";
+		iofile1.write(newText, sizeof(newText));
+
+		// Reading operation
+		std::cout << "Reading file: " << std::endl << std::endl;
+		std::string line;
+		while (std::getline(ifile, line)) {
+
+			std::cout << line << std::endl;
+		}
+
+		std::cout << "Finished reading text from file1.txt." << std::endl;
+
+
+		/**
+		 * Close the files
+		 *
+		 */
+		ofile.close();
+		ifile.close();
+		iofile3.close();
+		// the other iofile#'s will be CLOSED IMPLICITY by destructors because of its initializations
+	} else {
+		std::cerr << "Couldn't open some file." << std::endl;
+	}
+
+	return 0;
+}

@@ -1,0 +1,34 @@
+//============================================================================
+// Name        : FileManagement.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+	std::ofstream ofile;	// Ouput file stream
+	std::ifstream ifile;	// Input file stream
+	std::fstream  iofile;	// I/O file stream
+
+	// Open the files
+	ofile.open("files/file1.txt");    // Opens file1.dat for writing.
+	ifile.open("files/file2.txt");    // Opens file2.dat for reading.
+	iofile.open("files/file3.txt");   // Opens file3.dat for reading/writing.
+
+	std::fstream iofile("file4.txt");	// IMPLICIT creation & open of the file for I/O
+	std::fstream iofile("")
+
+	// Close the files.
+	ofile.close();
+	ifile.close();
+	iofile.close();
+	// "file4.txt" CLOSED IMPLICITY by destructors.
+
+	return 0;
+}

@@ -1,0 +1,2 @@
+Writing new data in the file.
+Writing new sentence.

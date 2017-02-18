@@ -1,0 +1,16 @@
+/*
+ * TempStat.cpp
+ *
+ *  Created on: 18 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "TempStat.h"
+#include <iostream>
+
+TempStat(double minimum = 0.0, double maximum = 0.0)
+		: minimum(minimum), maximum(maximum) {}
+
+
+
+

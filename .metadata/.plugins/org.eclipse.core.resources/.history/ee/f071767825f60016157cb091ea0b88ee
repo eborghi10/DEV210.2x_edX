@@ -1,0 +1,18 @@
+/*
+ * TempStat.cpp
+ *
+ *  Created on: 18 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "TempStat.h"
+
+TempStat::TempStat() {
+	// TODO Auto-generated constructor stub
+
+}
+
+TempStat::~TempStat() {
+	// TODO Auto-generated destructor stub
+}
+

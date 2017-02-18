@@ -1,0 +1,32 @@
+/*
+ * TempStat.cpp
+ *
+ *  Created on: 18 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "TempStat.h"
+#include <iostream>
+
+TempStat(double minimum, double maximum)
+		: minimum(minimum), maximum(maximum) {}
+
+
+void write(std::ostream & os) {
+	/**
+	 * ostream is the base class, you can specify any subclass instead.
+	 * ie., a string-stream object, a file stream.
+	 *
+	 */
+	os.write((char*)&(this->minimum), sizeof(double));
+	os.write((char*)&(this->maximum), sizeof(double));
+}
+
+void read(std::istream & is) {
+	/**
+	 * istream is the super class, you could pass the subclass string-stream or file stream.
+	 *
+	 */
+	is.read((char*)&minimum, sizeof(double));
+	is.read((char*)&maximum, sizeof(double));
+}

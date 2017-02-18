@@ -49,3 +49,7 @@ ___
 ## 4-StreamsAndFiles
 
 -**StreamOutputFormatting**: example of using streams manipulators of the _iomanip_ library.
+
+- **FileManagement**: practise of more common functions for file management.
+
+- **StringStream**: uses capabilities in _string-stream_ inherited from _iostream_ classes.

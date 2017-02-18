@@ -1,0 +1,38 @@
+19:23:47 **** Incremental Build of configuration Debug for project StringStream ****
+make all 
+Building file: ../src/StringStream.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/StringStream.d" -MT"src/StringStream.d" -o "src/StringStream.o" "../src/StringStream.cpp"
+Finished building: ../src/StringStream.cpp
+ 
+Building file: ../src/TempStat.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TempStat.d" -MT"src/TempStat.d" -o "src/TempStat.o" "../src/TempStat.cpp"
+Finished building: ../src/TempStat.cpp
+ 
+Building target: StringStream
+Invoking: Cross G++ Linker
+g++  -o "StringStream"  ./src/StringStream.o ./src/TempStat.o   
+./src/StringStream.o: In function `main':
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:20: undefined reference to `TempStat::~TempStat()'
+makefile:45: recipe for target 'StringStream' failed
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:21: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:22: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:23: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:24: undefined reference to `TempStat::~TempStat()'
+./src/StringStream.o:/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:25: more undefined references to `TempStat::~TempStat()' follow
+./src/StringStream.o: In function `main':
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:44: undefined reference to `operator<<(std::ostream&, TempStat const&)'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:44: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:20: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:21: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:22: undefined reference to `TempStat::~TempStat()'
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:23: undefined reference to `TempStat::~TempStat()'
+./src/StringStream.o:/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:24: more undefined references to `TempStat::~TempStat()' follow
+./src/StringStream.o: In function `TempStat::TempStat(double, double)':
+/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/TempStat.h:19: undefined reference to `vtable for TempStat'
+collect2: error: ld returned 1 exit status
+make: *** [StringStream] Error 1
+
+19:23:47 Build Finished (took 704ms)
+
