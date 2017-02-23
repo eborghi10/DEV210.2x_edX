@@ -1,0 +1,33 @@
+/*
+ * TempStat.h
+ *
+ *  Created on: 18 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef TEMPSTAT_H_
+#define TEMPSTAT_H_
+
+#pragma once
+
+#include <sstream>
+#include <iostream>
+
+class TempStat {
+public:
+	double minimum, maximum;
+
+	TempStat(double minimum = 0.0, double maximum = 0.0)
+			: minimum(minimum), maximum(maximum) {}
+
+	~TempStat();
+
+	void write(std::ostream & os);
+
+	void read(std::istream & is);
+};
+
+std::ostream & operator <<(std::ostream & os, const TempStat & ts);
+std::istream & operator >>(std::istream & os, const TempStat & ts);
+
+#endif /* TEMPSTAT_H_ */

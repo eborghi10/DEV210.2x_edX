@@ -1,0 +1,23 @@
+/*
+ * Donation.h
+ *
+ *  Created on: 19 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef DONATION_H_
+#define DONATION_H_
+
+#pragma once
+#include <sstream>
+
+class Donation {
+public:
+	Donation();
+	virtual ~Donation();
+};
+
+std::ostream & operator <<(std::ostream & os, const TempStat & ts);
+std::istream & operator >>(std::istream & os, const TempStat & ts);
+
+#endif /* DONATION_H_ */

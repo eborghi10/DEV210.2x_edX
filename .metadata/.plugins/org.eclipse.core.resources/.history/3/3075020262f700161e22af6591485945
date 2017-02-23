@@ -1,0 +1,56 @@
+//============================================================================
+// Name        : Lesson4.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+#include <cstdlib>		// atoi()
+#include <string>
+#include "Donation.h"
+
+using namespace std;
+
+int main() {
+
+	// Open "donation_total.txt" and read the LAST value (current_running_total)
+
+	const string File = "donation_total.txt";
+	// Open file for I/O operations
+	fstream iofile(File.c_str(), ios_base::in | ios_base::out);
+	int current_running_total = 0;
+	string reading;
+
+	if(iofile.is_open()) {
+		while( !iofile.eof() ) {
+
+			getline(iofile, reading);
+
+			current_running_total = std::atoi(reading.c_str());
+		}
+
+	} else {
+		cerr << "> Error opening the donation file" << endl;
+	}
+	cout << "Total: " << current_running_total << endl;
+
+	// The program will accept user-entered "donations" in the format "<name> <donation_amount>" from the console
+	int amount;
+	string name;
+	cin >> name >> amount;
+
+	Donation *pDonation = new Donation(name, amount);
+	//pDonation->showData();
+	// std::getline() & stringstream objects
+
+	// Extract the name field and add to current_running_total and update to donation_total.txt
+
+	// stoi()
+
+	iofile.close();
+
+	return 0;
+}

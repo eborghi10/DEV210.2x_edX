@@ -1,0 +1,14 @@
+/*
+ * Donation.cpp
+ *
+ *  Created on: 19 Feb 2017
+ *      Author: emiliano
+ */
+
+#include "Donation.h"
+
+
+Donation::~Donation() {
+	// TODO Auto-generated destructor stub
+}
+

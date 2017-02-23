@@ -1,0 +1,30 @@
+/*
+ * Donation.h
+ *
+ *  Created on: 19 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef DONATION_H_
+#define DONATION_H_
+
+#pragma once
+#include <sstream>
+
+class Donation {
+	std::string name;
+	int amount;
+public:
+	Donation(std::string dName, int dAmount)
+		: name(dName), amount(dAmount) {}
+	~Donation();
+
+	void showData() {
+		std::cout << "Name: " << this->name << "\t$" << this->amount << std::endl;
+	}
+};
+
+std::ostream & operator <<(std::ostream & os, const Donation & ts);
+std::istream & operator >>(std::istream & os, const Donation & ts);
+
+#endif /* DONATION_H_ */

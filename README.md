@@ -53,3 +53,7 @@ ___
 - **FileManagement**: practise of more common functions for file management.
 
 - **StringStream**: uses capabilities in _string-stream_ inherited from _iostream_ classes.
+
+___
+
+- **Lesson4**: complete exercise about files, file streams, and string streams to create a digital donation record. **[Compilling error]**

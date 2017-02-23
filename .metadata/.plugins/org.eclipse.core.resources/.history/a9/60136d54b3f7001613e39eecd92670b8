@@ -1,0 +1,36 @@
+/*
+ * Donation.h
+ *
+ *  Created on: 19 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef DONATION_H_
+#define DONATION_H_
+
+#pragma once
+#include <sstream>
+
+class Donation {
+	std::string name;
+	int amount;
+public:
+	Donation(std::string dName, int dAmount)
+		: name(dName), amount(dAmount) {}
+	~Donation();
+
+	void showData() {
+		std::cout << "Name: " << this->name << "\t$" << this->amount << std::endl;
+	}
+};
+
+// The following definitions are inline-d to avoid errors
+inline std::ostream & operator<<(std::ostream & os, const TempStat & ts) {
+	return (os << ts.minimum << "\t" << ts.maximum);
+}
+
+inline std::istream & operator>>(std::istream & is, const TempStat & ts) {
+	return (is >> ts.minimum >> ts.maximum);
+}
+
+#endif /* DONATION_H_ */

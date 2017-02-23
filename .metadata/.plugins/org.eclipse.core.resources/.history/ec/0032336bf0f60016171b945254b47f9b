@@ -1,0 +1,20 @@
+/*
+ * Donation.h
+ *
+ *  Created on: 19 Feb 2017
+ *      Author: emiliano
+ */
+
+#ifndef DONATION_H_
+#define DONATION_H_
+
+#pragma once
+#include <sstream>
+
+class Donation {
+public:
+	Donation();
+	virtual ~Donation();
+};
+
+#endif /* DONATION_H_ */

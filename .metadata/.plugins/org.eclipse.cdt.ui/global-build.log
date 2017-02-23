@@ -1,47 +1,189 @@
-19:23:47 **** Incremental Build of configuration Debug for project StringStream ****
+18:30:45 **** Incremental Build of configuration Debug for project Lesson4 ****
 make all 
-Building file: ../src/StringStream.cpp
+Building file: ../src/Lesson4.cpp
 Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/StringStream.d" -MT"src/StringStream.d" -o "src/StringStream.o" "../src/StringStream.cpp"
-Finished building: ../src/StringStream.cpp
- 
-Building file: ../src/TempStat.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TempStat.d" -MT"src/TempStat.d" -o "src/TempStat.o" "../src/TempStat.cpp"
-Finished building: ../src/TempStat.cpp
- 
-Building target: StringStream
-Invoking: Cross G++ Linker
-g++  -o "StringStream"  ./src/StringStream.o ./src/TempStat.o   
-./src/StringStream.o: In function `main':
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:20: undefined reference to `TempStat::~TempStat()'
-makefile:45: recipe for target 'StringStream' failed
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:21: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:22: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:23: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:24: undefined reference to `TempStat::~TempStat()'
-./src/StringStream.o:/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:25: more undefined references to `TempStat::~TempStat()' follow
-./src/StringStream.o: In function `main':
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:44: undefined reference to `operator<<(std::ostream&, TempStat const&)'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:44: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:20: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:21: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:22: undefined reference to `TempStat::~TempStat()'
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:23: undefined reference to `TempStat::~TempStat()'
-./src/StringStream.o:/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/StringStream.cpp:24: more undefined references to `TempStat::~TempStat()' follow
-./src/StringStream.o: In function `TempStat::TempStat(double, double)':
-/home/emiliano/DEV210.2x-Programs/4-StreamsAndFiles/StringStream/Debug/../src/TempStat.h:19: undefined reference to `vtable for TempStat'
-collect2: error: ld returned 1 exit status
-make: *** [StringStream] Error 1
-19:26:47 **** Incremental Build of configuration Debug for project FileManagement ****
-make all 
-Building file: ../src/FileManagement.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FileManagement.d" -MT"src/FileManagement.d" -o "src/FileManagement.o" "../src/FileManagement.cpp"
-Finished building: ../src/FileManagement.cpp
- 
-Building target: FileManagement
-Invoking: Cross G++ Linker
-g++  -o "FileManagement"  ./src/FileManagement.o   
-Finished building target: FileManagement
- 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lesson4.d" -MT"src/Lesson4.d" -o "src/Lesson4.o" "../src/Lesson4.cpp"
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h: In function ‘std::ostream& operator<<(std::ostream&, const Donation&)’:
+../src/Donation.h:16:14: error: ‘std::__cxx11::string Donation::name’ is protected
+  std::string name;
+              ^
+../src/Donation.h:46:20: error: within this context
+  return (os << don.name << "\t" << don.amount);
+                    ^
+../src/Donation.h:17:6: error: ‘int Donation::amount’ is protected
+  int amount;
+      ^
+../src/Donation.h:46:40: error: within this context
+  return (os << don.name << "\t" << don.amount);
+                                        ^
+../src/Donation.h: In function ‘std::istream& operator>>(std::istream&, const Donation&)’:
+../src/Donation.h:16:14: error: ‘std::__cxx11::string Donation::name’ is protected
+  std::string name;
+              ^
+../src/Donation.h:50:20: error: within this context
+  return (is >> don.name >> don.amount);
+                    ^
+../src/Donation.h:50:13: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘const string {aka const std::__cxx11::basic_string<char>}’)
+  return (is >> don.name >> don.amount);
+             ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/istream:120:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/5/istream:120:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/5/istream:124:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/istream:124:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/istream:131:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/5/istream:131:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/istream:168:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/5/istream:168:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘bool&’
+/usr/include/c++/5/istream:172:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/5/istream:172:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘short int&’
+/usr/include/c++/5/istream:175:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/5/istream:175:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘short unsigned int&’
+/usr/include/c++/5/istream:179:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/5/istream:179:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘int&’
+/usr/include/c++/5/istream:182:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/5/istream:182:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘unsigned int&’
+/usr/include/c++/5/istream:186:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/5/istream:186:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘long int&’
+/usr/include/c++/5/istream:190:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/5/istream:190:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘long unsigned int&’
+src/subdir.mk:18: recipe for target 'src/Lesson4.o' failed
+/usr/include/c++/5/istream:195:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/5/istream:195:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘long long int&’
+/usr/include/c++/5/istream:199:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/5/istream:199:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘long long unsigned int&’
+/usr/include/c++/5/istream:214:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/5/istream:214:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘float&’
+/usr/include/c++/5/istream:218:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/5/istream:218:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘double&’
+/usr/include/c++/5/istream:222:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/5/istream:222:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘long double&’
+/usr/include/c++/5/istream:235:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/5/istream:235:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘void*&’
+/usr/include/c++/5/istream:259:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/5/istream:259:7: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:49:23: note: candidate: std::istream& operator>>(std::istream&, const Donation&)
+ inline std::istream & operator>>(std::istream & is, const Donation & don) {
+                       ^
+../src/Donation.h:49:23: note:   no known conversion for argument 2 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘const Donation&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/5/istream:808:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   cannot convert ‘don.Donation::name’ (type ‘const string {aka const std::__cxx11::basic_string<char>}’) to type ‘signed char*’
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/5/istream:803:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   cannot convert ‘don.Donation::name’ (type ‘const string {aka const std::__cxx11::basic_string<char>}’) to type ‘unsigned char*’
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/5/istream:761:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   cannot convert ‘don.Donation::name’ (type ‘const string {aka const std::__cxx11::basic_string<char>}’) to type ‘signed char&’
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/5/istream:756:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   cannot convert ‘don.Donation::name’ (type ‘const string {aka const std::__cxx11::basic_string<char>}’) to type ‘unsigned char&’
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/istream:934:0,
+                 from /usr/include/c++/5/iostream:40,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/bits/istream.tcc:923:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/5/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘const string {aka const std::__cxx11::basic_string<char>}’)
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/istream:934:0,
+                 from /usr/include/c++/5/iostream:40,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/bits/istream.tcc:955:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/5/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   mismatched types ‘_CharT2*’ and ‘std::__cxx11::basic_string<char>’
+  return (is >> don.name >> don.amount);
+                    ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../src/Lesson4.cpp:9:
+/usr/include/c++/5/bits/basic_string.tcc:1441:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+In file included from ../src/Lesson4.cpp:13:0:
+../src/Donation.h:50:20: note:   types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+  return (is >> don.name >> don.amount);
+                    ^
+../src/Donation.h:17:6: error: ‘int Donation::amount’ is protected
+  int amount;
+      ^
+../src/Donation.h:50:32: error: within this context
+  return (is >> don.name >> don.amount);
+                                ^
+make: *** [src/Lesson4.o] Error 1

@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : StringStream.cpp
+// Author      : Ing. Emiliano Borghi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <sstream>
+#include "TempStat.h"
+using namespace std;
+
+int main() {
+
+	// Write a file in binary format
+	std::ostringstream oss(std::ios_base::binary);
+
+	// They are writed on the stack
+	TempStat(-2.5, 7.5).write(oss);
+	TempStat(0, 9.9).write(oss);
+	TempStat(2.5, 11.0).write(oss);
+	TempStat(5.5, 14.5).write(oss);
+	TempStat(7.0, 17.7).write(oss);
+	TempStat(10.5, 23.7).write(oss);
+	TempStat(11.7, 29.5).write(oss);
+	TempStat(7.6, 22.9).write(oss);
+	TempStat(7.2, 21.5).write(oss);
+	TempStat(2.0, 16.0).write(oss);
+	TempStat(-4.7, 12.5).write(oss);
+	TempStat(-1.9, 8.5).write(oss);
+
+	// Read a string-stream with the format used previously
+	std::istringstream iss(oss.str(), std::ios_base::binary);
+
+	while(!iss.eof()) {
+
+		TempStat ts;
+		ts.read(iss);
+
+		// If there is no byte to read, we're done
+		if(iss.gcount() == 0)	break;
+
+		std::cout << "Read temperature stats: ";
+		std::cout << ts;
+	}
+
+	return 0;
+}

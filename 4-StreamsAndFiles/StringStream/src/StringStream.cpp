@@ -6,8 +6,6 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include <iostream>
-#include <sstream>
 #include "TempStat.h"
 using namespace std;
 
@@ -41,7 +39,8 @@ int main() {
 		// If there is no byte to read, we're done
 		if(iss.gcount() == 0)	break;
 
-		std::cout << "Read temperature stats: " << ts;
+		std::cout << std::endl << "Read temperature stats: ";
+		std::cout << ts;
 	}
 
 	return 0;
